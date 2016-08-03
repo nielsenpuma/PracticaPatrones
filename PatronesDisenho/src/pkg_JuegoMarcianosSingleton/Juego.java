@@ -34,6 +34,7 @@ public class Juego {
                 jugador.destruirMarciano();
             }
             computadora.crearMarcianos();
+            marcianos.cuantosQuedan();
         } while (disparos != 0);
     }
 }

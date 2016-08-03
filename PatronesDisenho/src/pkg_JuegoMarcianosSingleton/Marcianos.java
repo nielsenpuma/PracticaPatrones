@@ -22,13 +22,19 @@ public final class Marcianos {
     }
     
     public static void derribarMarcianos(){
-        System.out.println("Soy el bueno, derribe un marciano");
-        if(cantidad > 0) cantidad--;
+        
+        if(cantidad > 0){
+            cantidad--;
+            System.out.println("Soy el bueno, derribe un marciano");
+        }
     }
     
     public static void crearMarcianos(){
-        System.out.println("Soy el malo, cree un marciano");
-        if(cantidad > 0) cantidad++;
+        
+        if(cantidad > 0){
+            cantidad++;
+            System.out.println("Soy el malo, cree un marciano");
+        }
     }
     
     public static void cuantosQuedan(){
