@@ -11,13 +11,19 @@ package pkg_Singleton;
  */
 public final class Singleton {
     private static final Singleton singleton = new Singleton();
+    private static int cantidad;
 
     private Singleton() {
         System.out.println("HOla, he sido creado una sola vez!!");
     }
     
     public static Singleton obtenerSingleton(){
+        cantidad++;
         return singleton;
+    }
+    
+    public static void vecesLLamado(){
+        System.out.println("Se ha llamado el método: " + cantidad + "veces");
     }
     
 }

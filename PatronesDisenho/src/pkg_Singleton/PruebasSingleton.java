@@ -21,6 +21,9 @@ public class PruebasSingleton {
         Singleton miSingleton8 = Singleton.obtenerSingleton();
         Singleton miSingleton9 = Singleton.obtenerSingleton();
         Singleton miSingleton10 = Singleton.obtenerSingleton();
+        
+        miSingleton3.vecesLLamado();
+        
         System.out.println("Fin de la creación");
     }
     
