@@ -18,7 +18,7 @@ public class Pagos {
         FabricaHeredada miFabrica;
         Conexion miConexion;
         
-        System.out.print("Digite la BD: ");
+        System.out.print("Digite la BD (AF): ");
         String tipo = sc.nextLine();
         
         miFabrica = new FabricaHeredada();
