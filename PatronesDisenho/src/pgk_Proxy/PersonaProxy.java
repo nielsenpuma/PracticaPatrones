@@ -20,6 +20,7 @@ public class PersonaProxy implements Runnable{
     InputStream in;
     PrintWriter salida;
     int character;
+    int permiso = 0;
 
     public PersonaProxy() {
         try {
@@ -56,7 +57,11 @@ public class PersonaProxy implements Runnable{
     }
     
     public void decirEstado(){
-        salida.println("decirEstado");
+        if(permiso==1){
+            salida.println("decirEstado");
+        }else{
+            System.out.println("Usted no tiene permiso.");
+        }
     }
     
     public void despedirse(){
