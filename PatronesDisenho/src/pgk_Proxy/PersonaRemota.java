@@ -69,4 +69,8 @@ public class PersonaRemota implements Runnable{
         salida.println("Chao!!");
     }
     
+    public static void main(String[] args) {
+        PersonaRemota pr = new PersonaRemota();
+    }
+    
 }
