@@ -9,6 +9,11 @@ package pgk_State;
  *
  * @author nielsenpumajihuallanca
  */
-public interface Estado {
-    public void ejecutarAccion();
+public class Activa implements Estado{
+
+    @Override
+    public void ejecutarAccion() {
+        System.out.println("Estado Activo: Atento");
+    }
+    
 }
