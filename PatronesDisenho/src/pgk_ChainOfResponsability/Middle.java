@@ -25,6 +25,6 @@ public class Middle implements InterfaceAyuda{
         }else{
             susesor.getAyuda(tipoAyuda);
         }
-    }
+    } 
     
 }
